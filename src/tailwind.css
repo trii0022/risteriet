@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+    @apply font-shadows;
+  }
+  h2 {
+    @apply text-xl;
+    @apply font-lato;
+  }
+
+  h3 {
+    @apply text-lg;
+    @apply font-lato;
+  }
+  h4 {
+    @apply text-base;
+    @apply font-lato;
+  }
+
+  p {
+    @apply text-sm;
+    @apply font-lato;
+  }
+}
