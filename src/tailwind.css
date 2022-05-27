@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply bg-light;
+  }
   h1 {
     @apply text-2xl;
     @apply font-shadows;
@@ -24,5 +27,19 @@
   p {
     @apply text-sm;
     @apply font-lato;
+  }
+
+  .btn-white {
+    @apply text-primary border border-white bg-white py-2 px-4;
+  }
+  .btn-white:hover {
+    @apply bg-primary border border-white text-white;
+  }
+
+  .btn-blue {
+    @apply border border-white bg-transparent py-2 px-4 text-white;
+  }
+  .btn-blue:hover {
+    @apply text-primary bg-white;
   }
 }
