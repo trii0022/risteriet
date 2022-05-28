@@ -5,9 +5,15 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Risteriet Coffee - Productlist</title>
+  <title>Risteriet Coffee Kaffe bønner</title>
   <link rel="stylesheet" href="tailwind.css" />
+  <!-- <link rel="stylesheet" href="filteringSystem/filterStyle.css"> -->
   <link rel="stylesheet" href="style.css" />
+
+
+  <script src="filteringSystem/mixitup.min.js" defer></script>
+  <script src="filteringSystem/mixitup-multifilter.min.js" defer></script>
+  <script src="filteringSystem/js.js" defer></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -116,9 +122,278 @@
   <!-- end of hero section -->
 
 
+  <main class="container-fluid ml-24 mr-24 font-lato text-sm">
+    <section class="row billeder">
+      <div class="col-xs-12">
+      
+        <div class="filtersort end-xs">
+          <form>
+         
+
+            <fieldset class="input-field" data-filter-group="origin">
+              <!-- data-logic="and" -->
+              <button type="button"  data-filter="all">Alle</button>
+              <button type="button" data-toggle=".originA">Afrika</button>
+              <button type="button" data-toggle=".originB">Asien</button>
+              <button type="button" data-toggle=".originC">Nordamerika</button>
+              <button type="button" data-toggle=".originD">Mellemamerika</button>
+              <button type="button" data-toggle=".originE">Sydamerika</button>
+            </fieldset>
+
+            <fieldset class="input-field" data-filter-group="roast">
+              <!-- data-logic="and" -->
+              <button type="button" data-filter="all">Alle</button>
+              <button type="button" data-toggle=".city">City (lys rist)</button>
+              <button type="button" data-toggle=".cityP">City+ (mellemlys rist)</button>
+              <button type="button" data-toggle=".cityPP">City++ (mellemrist)</button>
+              <button type="button" data-toggle=".fullCity"> Full city (mellemmørk rist)</button>
+              <button type="button" data-toggle=".fullCityP">Full City+ (mørk rist)</button>
+              <button type="button" data-toggle=".fullCityPP">Full City++ (mørkeste rist)</button>
+            </fieldset>
+
+
+            <div>
+              <button type="reset">Reset</button>
+            </div>
+
+
+            <h6>Sortering:</h6>
+            <fieldset>
+              <button type="button" data-sort="default">Sorter</button>
+
+              <button type="button" data-sort="price:asc">Pris lavest til hølest</button>
+              <button type="button" data-sort="price:desc">Pris højest til lavest</button>
+
+
+              <button type="button" data-sort="date:desc">Nyest</button>
+              <button type="button" data-sort="rate:desc">populær</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-x-16">
+
+        <article class="col-xs-12 col-sm-4 postsummary mix originA city" data-price="130" data-date="20220528"
+          data-rate="18">
+         
+            <img src="images/mockup.png" alt="flot billede">
+            <h3>HONDURAS CAPUCAS</h3>
+          <p>   Fra 130,00 DKK</p>
+          <p>Risteprofil: </p>
+<button class="btn-blue w-full">Køb</button>
+
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originA city border-2" data-price="78" data-date="20220602"
+          data-rate="17">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 78,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originA city" data-price="83" data-date="20220529"
+          data-rate="16">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 83,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originA cityPP" data-price="160" data-date="20220513"
+          data-rate="15">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            160,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originA cityPP" data-price="62" data-date="20220622"
+          data-rate="14">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 62,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originB fullCity" data-price="70" data-date="20220615"
+          data-rate="13">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 70,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originB fullCity" data-price="160" data-date="20220523"
+          data-rate="12">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            160,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originB fullCityP" data-price="94" data-date="20220603"
+          data-rate="11">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 94,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originB fullCityPP" data-price="69" data-date="20220531"
+          data-rate="10">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 69,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originB fullCity" data-price="87" data-date="20220601"
+          data-rate="8">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 87,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originC fullCity" data-price="98" data-date="20220602"
+          data-rate="8">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 98,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originC cityPP" data-price="69" data-date="20220615"
+          data-rate="7">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 69,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originC cityPP" data-price="73" data-date="20220513"
+          data-rate="6">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 73,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originD cityP" data-price="78" data-date="20220610"
+          data-rate="5">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 78,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originD cityP" data-price="77" data-date="20220614"
+          data-rate="22">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 77,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originD cityP" data-price="69" data-date="20220528"
+          data-rate="90">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 69,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originD cityP" data-price="78" data-date="20220517"
+          data-rate="12">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 78,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originE fullCity" data-price="62" data-date="20220519"
+          data-rate="3">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 62,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originE fullCity" data-price="60" data-date="20220527"
+          data-rate="50">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 60,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originE fullCity" data-price="67" data-date="20220618"
+          data-rate="100">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 67,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originE fullCity" data-price="80" data-date="20220517"
+          data-rate="6">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 80,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originE fullCity" data-price="67" data-date="20220607"
+          data-rate="1">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 67,00 DKK
+          </div>
+        </article>
+        <article class="col-xs-12 col-sm-4 postsummary mix originE fullCity" data-price="77" data-date="20220609"
+          data-rate="8">
+          <div class="postthumb">
+            <img src="images/mockup.png" alt="flot billede">
+          </div>
+          <div class="postmeta">
+            Fra 77,00 DKK
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+
+
   <!-- footer -->
   <!-- end of footer -->
   <script type="module" src="index.js"></script>
+
 </body>
 
 </html>

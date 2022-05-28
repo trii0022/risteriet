@@ -91,3 +91,20 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+/* !! FILTER !! */
+
+.filtersort {
+  margin-right: -0.5em;
+}
+.filtersort button {
+  
+  border: 1px solid #748097;
+  color:#161A24;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+.filtersort button.mixitup-control-active {
+  background-color: #748097;
+  color:#161A24;
+}
