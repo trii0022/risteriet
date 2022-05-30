@@ -30,14 +30,14 @@
   }
 
   .btn-white {
-    @apply text-primary border border-white bg-white py-2 px-4;
+    @apply text-primary border-light bg-light border py-2 px-4;
   }
   .btn-white:hover {
     @apply bg-primary border border-white text-white;
   }
 
   .btn-blue {
-    @apply border border-white bg-transparent py-2 px-4 text-white;
+    @apply border-light text-light border bg-transparent py-2 px-4;
   }
   .btn-blue:hover {
     @apply text-primary bg-white;
