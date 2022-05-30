@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <div class="bg-gradient-to-b from-brown via-transparent to-transparent"> 
+    <div class=" bg-gradient-to-b from-brown via-light to-transparent"> 
     <!-- navbar -->
     <div class="navbar bg-none px-6 sm:px-20">
       <div class="navbar-start">
@@ -140,21 +140,24 @@
 
     <!-- hero section -->
 
-    <section class="md:grid grid-cols-2">
-      <figure class="flex flex-row invisible md:visible w-0 md:w-full"> 
-        <img class="self-center max-w-4xl" src="images/mockup.webp" alt="Coffee bag">
+    <section class="overflow-hidden z-0 md:grid grid-cols-2 md:mt-20">
+      <figure class="sm:hidden absolute">
+        <img class="ml-14 mt-48" src="images/bean-spread.png" alt="Beans">
       </figure>
-      <div class="bg-primary drop-shadow-2xl mx-10 my-20 md:mr-64 md:pt-14 md:px-8">
-        <h1 class="text-light py-14 pl-4 pr-8">
+      <figure class="invisible md:visible flex w-0 md:w-full"> 
+        <img class="absolute self-center w-7/12 ml-10" src="images/mockup.webp" alt="Coffee bag">
+      </figure>
+      <div class="bg-primary drop-shadow-2xl mx-10 my-20 md:mr-64 md:px-8 md:py-10">
+        <h1 class="text-light px-8 py-10 md:px-10 md:pl-4 md:pr-8">
           Ny ristet kaffe fra eget risteri
         </h1>
-        <div class="flex flex-col">
+        <div class="flex flex-col md:pt-10">
           <button class="btn-white m-4">KØB KAFFE</button>
           <button class="btn-blue m-4 mb-10 md:mb-0">TILMELD DIG NU</button>
         </div>
       </div>
 
-      <div class="m-10 flex justify-center md:justify-end md:m-0">
+      <div class="m-10 flex justify-center md:justify-end">
         <a href="#section2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -178,9 +181,11 @@
           </svg>
         </a>
       </div>
+    </div>
+
     </section>
 
-    </div>
+   
     <!-- end of hero section -->
 
     <section id="section2" class="mx-5 my-20 md:m-24">
@@ -235,7 +240,12 @@
     <section class="mx-5 my-20 md:m-24">
       <h2>TIPS & TRICKS</h2>
       <p>BRYGGE DIN EGEN KAFFE</p>
-      <IMG></IMG>
+      
+
+      <video width="320" height="240" autoplay muted loop>
+        <source src="images/video.mp4" type="video/mp4"> 
+      </video>
+
     </section>
 
     <section class="mx-5 my-20 md:m-24">
