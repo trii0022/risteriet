@@ -91,3 +91,7 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+#dropdown-nav {
+  border-radius: 0;
+}

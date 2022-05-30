@@ -43,3 +43,8 @@
     @apply text-primary bg-white;
   }
 }
+
+.menu[class*=" p-"] li > *,
+.menu[class^="p-"] li > * {
+  border-radius: 0;
+}
