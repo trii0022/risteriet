@@ -1,5 +1,7 @@
 module.exports = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
+  content: ["./node_modules/flowbite/**/*.js"],
+
   theme: {
     extend: {
       colors: {
@@ -28,4 +30,5 @@ module.exports = {
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
   plugins: [require("daisyui")],
+  plugins: [require("flowbite/plugin")],
 };

@@ -95,16 +95,49 @@
 /* !! FILTER !! */
 
 .filtersort {
-  margin-right: -0.5em;
+  margin: 0.5em;
+  background-color: aqua;
 }
 .filtersort button {
-  
-  border: 1px solid #748097;
-  color:#161A24;
-  padding: 0.5em;
-  margin-bottom: 0.5em;
+  color: #161a24;
+  margin: 0.5em;
 }
+
+.filtersort button:hover {
+  border-bottom: 1px solid #748097;
+  color: #748097;
+  margin: 0.5em;
+}
+
 .filtersort button.mixitup-control-active {
-  background-color: #748097;
-  color:#161A24;
+  /* background-color: #748097; */
+  color: #161a24;
+  border-bottom: 1px solid #748097;
+}
+
+
+.filtersort button.mixitup-control-active::before {
+  /* background-color: #748097; */
+  content: "→";
+}
+
+#first::before {
+  content: none;
+}
+
+.filtersort button.mixitup-control-active {
+  /* background-color: #748097; */
+  color: #161a24;
+  border-bottom: 1px solid #748097;
+}
+
+.dropd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#dropContent,
+#dropContentRist {
+  display: none;
 }
