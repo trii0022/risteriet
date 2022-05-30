@@ -137,7 +137,10 @@
 
     <!-- hero section -->
 
-    <section>
+    <section class="md:grid grid-cols-2">
+      <figure class="flex flex-row invisible md:visible w-0 md:w-full"> 
+        <img class="self-center" src="images/hero.svg" alt="Coffee bag">
+      </figure>
       <div class="bg-primary mx-10 my-20">
         <h1 class="text-light py-14 pl-4 pr-8">
           Ny ristet kaffe fra eget risteri
@@ -148,7 +151,7 @@
         </div>
       </div>
 
-      <div class="m-10 flex justify-center">
+      <div class="m-10 flex justify-center md:justify-end md:m-0">
         <a href="#section2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -176,9 +179,9 @@
 
     <!-- end of hero section -->
 
-    <section id="section2" class="mx-5 my-20">
+    <section id="section2" class="mx-5 my-20 md:m-24">
       <h2>HVORFOR RISTERIET</h2>
-
+<div class="md:grid grid-cols-3"> 
       <div class="my-8 flex flex-row">
         <img src="images/bean-illustration.svg" alt="Bean illustration" />
         <p class="self-center p-3">
@@ -198,10 +201,12 @@
           FÅ DIN KAFFE LEVERT MÅNEDLIG DIREKTE TIL DIN DØR
         </p>
       </div>
+    </div>
     </section>
 
-    <section class="mx-5">
+    <section class="mx-5 md:m-24">
       <h2>SHOP VORES UDVALG</h2>
+      <div class="md:grid grid-cols-3"> 
       <a class="mx-10 my-5 flex flex-col" href="productlist.html">
         <img class="p-5" src="images/kapsler.png" alt="Kapsler" />
         <h4 class="self-center underline">KAPSLER</h4>
@@ -214,6 +219,7 @@
         <img class="p-7" src="images/udstyr.svg" alt="Kapsler" />
         <h4 class="self-center underline">KAFFE UDSTYR</h4>
       </a>
+      </div>
 
       <a class="mx-14 my-5 flex flex-col" href="#">
         <button class="btn-white border-primary my-10 self-center border-2">
@@ -222,14 +228,16 @@
       </a>
     </section>
 
-    <section class="mx-5 my-20">
+    <section class="mx-5 my-20 md:m-24">
       <h2>TIPS & TRICKS</h2>
       <p>BRYGGE DIN EGEN KAFFE</p>
       <IMG></IMG>
     </section>
 
-    <section class="mx-5 my-20">
+    <section class="mx-5 my-20 md:m-24">
 <h2>KOM OG BESØG OS</h2>
+<div class="md:grid grid-cols-5"> 
+  <div class="md:col-span-2"> 
 <h4 class="p-3">KAFFEBAR PÅ VESTERBRO</h4>
 <ul class="px-3">
   <li>Risteriet Halmtorvet</li>
@@ -242,22 +250,28 @@
   <li class="text-light">MAN - FRE: 7:30 - 18:00</li>
   <li class="text-light">LØR - SØN: 9:00 - 17:00</li>
 </ul>
+ 
 
+
+<div> 
 <h4 class="p-3">VORES FABRIK & UNOMATEN</h4>
 <ul class="px-3">
+  <li>Risteriet Fabrik</li>
   <li>Farverland 9</li>
   <li>2600 Glostrup</li>
 </ul>
 <p class="px-3 text-primary mt-10">VI HAR ÅBENT:</p>
 <ul class="mx-3 flex flex-col px-3 py-2 items-center my-4 bg-secondary">
-  <li class="text-light">FABRIK: MAN - FRE: 7:00 - 15:00</li>
-  <li class="text-light">KAFFEBØNNER: 24/7</li>
+  <li class="text-light">MAN - FRE: 7:00-15:00</li>
+  <li class="text-light">KAFFEBØNNER: 24 / 7</li>
 </ul>
-
-<figure class="my-14 flex flex-col px-10 py-10 items-center">
+</div>
+</div>
+<figure class="col-span-3 my-14 flex flex-col px-10 py-10 items-center md:w-full">
   <img src="images/bigmap.svg" alt="Map">
 </figure>
-<button class="mx-24 btn-white border-2 border-primary">KONTAKT OS</button>
+
+<button class="mx-24 md:mx-4 mt-10 btn-white border-2 border-primary">KONTAKT OS</button>
 
     </section>
 
