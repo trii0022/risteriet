@@ -91,3 +91,16 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+/* Filter  */
+
+.dropd {
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  width: 100;
+}
+
+.dropd button:hover {
+  background-color: aqua;
+}
