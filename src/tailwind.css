@@ -30,16 +30,16 @@
   }
 
   .btn-white {
-    @apply text-primary border-light bg-light border-2 py-2 px-4;
+    @apply text-primary border-2 border-primary bg-light py-2 px-4;
   }
   .btn-white:hover {
-    @apply bg-primary border-2 border-white text-white;
+    @apply bg-primary border-2 border-light text-light;
   }
 
   .btn-blue {
-    @apply border-light text-light border-2 bg-transparent py-2 px-4;
+    @apply border-light text-light border-2 bg-primary py-2 px-4;
   }
   .btn-blue:hover {
-    @apply text-primary bg-white;
+    @apply text-primary border-2 border-primary bg-light py-2 px-4;
   }
 }

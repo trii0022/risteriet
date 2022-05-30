@@ -94,13 +94,42 @@
 
 /* Filter  */
 
+
+
+.filtersort button {
+  color: #161a24;
+  margin: 0.5em;
+}
+
+.filtersort button.mixitup-control-active {
+  color: #748097;
+}
+
+.filtersort button.mixitup-control-active::before {
+  /* background-color: #748097; */
+  content: "→";
+}
+
 .dropd {
   display: flex;
   flex-direction: column;
-  padding: 6px;
-  width: 100;
 }
 
 .dropd button:hover {
-  background-color: aqua;
+  /* border-bottom: 1px solid #748097; */
+  color: #748097;
+  margin: 0.5em;
+}
+
+
+#first::before {
+  content: none;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.rotate {
+  transform: rotate(180);
 }
