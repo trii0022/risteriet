@@ -98,7 +98,8 @@
 
 .filtersort button {
   color: #161a24;
-  margin: 0.5em;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .filtersort button.mixitup-control-active {
@@ -118,12 +119,17 @@
 .dropd button:hover {
   /* border-bottom: 1px solid #748097; */
   color: #748097;
-  margin: 0.5em;
+
 }
 
 
 #first::before {
   content: none;
+}
+
+.dropdCon{
+  z-index: 50;
+ 
 }
 
 .hide {

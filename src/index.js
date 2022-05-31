@@ -34,18 +34,17 @@ function roastShow() {
 document.querySelector("#countrybtn").addEventListener("click", countryShow);
 
 function countryShow() {
-  document.querySelector("#countrycontent").classList.toggle("hide")
+  document.querySelector("#countrycontent").classList.toggle("hide");
 }
-
 
 document.querySelector("#blendbtn").addEventListener("click", blendShow);
 
 function blendShow() {
-  document.querySelector("#blendcontent").classList.toggle("hide")
+  document.querySelector("#blendcontent").classList.toggle("hide");
 }
 
 document.querySelector("#andetbtn").addEventListener("click", andetShow);
 
 function andetShow() {
-  document.querySelector("#andetcontent").classList.toggle("hide")
+  document.querySelector("#andetcontent").classList.toggle("hide");
 }
