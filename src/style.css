@@ -1,3 +1,11 @@
+a {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
 .hamburger {
   display: none;
 }
@@ -97,8 +105,6 @@
 }
 /* Filter  */
 
-
-
 .filtersort button {
   color: #161a24;
   margin-top: 12px;
@@ -122,17 +128,14 @@
 .dropd button:hover {
   /* border-bottom: 1px solid #748097; */
   color: #748097;
-
 }
-
 
 #first::before {
   content: none;
 }
 
-.dropdCon{
+.dropdCon {
   z-index: 50;
- 
 }
 
 .hide {
