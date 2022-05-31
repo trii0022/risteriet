@@ -17,18 +17,19 @@
   </head>
 
   <body>
+    <div class=" bg-gradient-to-b from-brown via-light to-transparent">
     <!-- navbar -->
-    <div class="navbar bg-light px-6 sm:px-20">
+    <div class="navbar bg-none px-6 sm:px-20">
       <div class="navbar-start">
         <a href="index.html">
           <img src="images/logo.svg" alt="logo" class="w-36" />
         </a>
       </div>
-      <div class="navbar-center nav-menu lg:bg-light bg-light">
-        <ul class="menu menu-horizontal p-0">
+      <div class="navbar-center nav-menu lg:bg-none bg-none">
+        <ul id="dropdown-nav" class="menu menu-horizontal p-0">
           <li tabindex="0">
-            <a class="font-lato nav-item hidden lg:flex">
-              KØB KAFFE
+            <a href="category.html" class="font-lato nav-item hidden lg:flex">
+              Shop
               <svg
                 class="fill-current"
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,27 +43,30 @@
               </svg>
             </a>
             <ul class="p-2">
-              <li><a class="font-lato hidden lg:flex">Bønner</a></li>
+
+              <li><a class="font-lato hidden lg:flex" href="newProductlist.html">Bønner</a></li>
               <li><a class="font-lato hidden lg:flex">Kapsler</a></li>
             </ul>
           </li>
-          <li><a class="font-lato nav-item hidden lg:flex">ABONNER</a></li>
-          <li><a class="font-lato nav-item hidden lg:flex">OM OS</a></li>
+          <li><a class="font-lato nav-item hidden lg:flex">Kaffe abonnement</a></li>
+          <li><a class="font-lato nav-item hidden lg:flex">Guides</a></li>
         </ul>
 
         <ul class="visible lg:hidden">
           <li>
-            <a href="#" class="font-lato nav-item hover:text-accent"
-              >KØB KAFFE</a
+            <a
+              href="productlist.html"
+              class="font-lato nav-item hover:text-accent"
+              >Køb kaffe</a
             >
           </li>
           <li>
-            <a href="#" class="font-lato nav-item hover:text-accent">ABONNER</a>
+            <a href="#" class="font-lato nav-item hover:text-accent">Kaffe abonnement</a>
           </li>
           <li>
-            <a a href="#" class="font-lato nav-item hover:text-accent">OM OS</a>
+            <a a href="#" class="font-lato nav-item hover:text-accent">Guides</a>
           </li>
-          <li>
+          <!-- <li>
             <a a href="#" class="font-lato nav-item hover:text-accent"
               >MENU ITEM 4</a
             >
@@ -76,26 +80,26 @@
             <a a href="#" class="font-lato nav-item hover:text-accent"
               >MENU ITEM 6</a
             >
-          </li>
+          </li> -->
         </ul>
       </div>
 
       <div class="navbar-end">
         <button class="btn btn-ghost btn-circle hidden lg:flex">
           <a href="index.html">
-            <img src="images/search.svg" class="h-6" alt="search" />
+            <img src="images/search.svg" class="h-5" alt="search" />
           </a>
         </button>
 
         <button class="btn btn-ghost btn-circle hidden lg:flex">
           <a href="index.html">
-            <img src="images/basket.svg" class="h-6" alt="basket" />
+            <img src="images/basket.svg" class="h-5" alt="basket" />
           </a>
         </button>
 
         <button class="btn btn-ghost btn-circle hidden lg:flex">
           <a href="index.html">
-            <img src="images/profile.svg" class="h-6" alt="profile" />
+            <img src="images/profile.svg" class="h-5" alt="profile" />
           </a>
         </button>
 
@@ -118,14 +122,15 @@
               </div>
             </a>
           </label>
-          <ul
+          <!-- <ul
             tabindex="0"
             class="menu menu-compact dropdown-content bg-base-100 mt-3 mr-5 w-28 p-2 pr-10 shadow"
           >
             <li><a>Guides</a></li>
             <li><a>Locations</a></li>
             <li><a>Your profile</a></li>
-          </ul>
+            <li><a href="singleproduct.html">Menu item 4</a></li>
+          </ul> -->
         </div>
       </div>
     </div>
@@ -136,11 +141,14 @@
 
     <!--  -->
 
-    <div class="h-100 container bg-gradient-to-b from-indigo-500">
+    <div class="">
       <h1 class="carousel-center text-center md:text-center">
         Vælg en kategori
       </h1>
     </div>
+
+    </div>
+
 
     <section class="grid grid-cols-3 place-items-center">
       <div>
@@ -161,11 +169,11 @@
       </div>
       <div>
         <img src="images/image_category/Kursur.png" alt="kursur" />
-        <h4>KURSUR</h4>
+        <h4>KURSER</h4>
       </div>
       <div>
         <img src="images/image_category/abonnement.png" alt="abonnement" />
-        <h4>ABONNEMENT</h4>
+        <h4>KAFFE ABONNEMENT</h4>
       </div>
       <div>
         <img src="images/image_category/tilbud.png" alt="tilbud" />
