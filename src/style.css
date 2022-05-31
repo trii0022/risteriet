@@ -149,3 +149,8 @@ button {
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  overflow-x: hidden;
+  overscroll-behavior: none;
+}
