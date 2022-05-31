@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+  html,
   body {
     @apply bg-light;
   }
@@ -30,17 +31,17 @@
   }
 
   .btn-white {
-    @apply text-primary border-light bg-light border-2 py-2 px-4;
+    @apply text-primary border-primary bg-light border-2 py-2 px-4;
   }
   .btn-white:hover {
-    @apply bg-primary border-2 border-white text-white;
+    @apply bg-primary border-light text-light border-2;
   }
 
   .btn-blue {
-    @apply border-light text-light border-2 bg-transparent py-2 px-4;
+    @apply border-primary text-light bg-primary border-2 py-2 px-4;
   }
   .btn-blue:hover {
-    @apply text-primary bg-white;
+    @apply text-primary border-primary bg-light border-2 py-2 px-4;
   }
 }
 
