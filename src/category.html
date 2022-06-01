@@ -18,64 +18,47 @@
 
   <body>
     <figure class="from-brown via-light bg-gradient-to-b to-transparent">
-      <!-- navbar -->
-      <div class="navbar bg-none px-6 sm:px-20">
-        <div class="navbar-start">
-          <a href="index.html">
-            <img src="images/logo.svg" alt="logo" class="w-36" />
-          </a>
-        </div>
-        <div class="navbar-center nav-menu bg-none lg:bg-none">
-          <ul id="dropdown-nav" class="menu menu-horizontal p-0">
-            <li tabindex="0">
-              <a href="category.html" class="font-lato nav-item hidden lg:flex">
-                Shop
-                <svg
-                  class="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
-                  />
-                </svg>
-              </a>
-              <ul class="p-2">
-                <li>
-                  <a class="font-lato hidden lg:flex" href="newProductlist.html"
-                    >Bønner</a
-                  >
-                </li>
-                <li><a class="font-lato hidden lg:flex">Kapsler</a></li>
-              </ul>
-            </li>
-            <li>
-              <a class="font-lato nav-item hidden lg:flex">Kaffe abonnement</a>
-            </li>
-            <li><a class="font-lato nav-item hidden lg:flex">Guides</a></li>
-          </ul>
+    
 
-          <ul class="visible lg:hidden">
-            <li>
-              <a
-                href="newproductlist.html"
-                class="font-lato nav-item hover:text-accent"
-                >Køb kaffe</a
-              >
-            </li>
-            <li>
-              <a href="#" class="font-lato nav-item hover:text-accent"
-                >Kaffe abonnement</a
-              >
-            </li>
-            <li>
-              <a a href="#" class="font-lato nav-item hover:text-accent"
-                >Guides</a
-              >
-            </li>
-            <!-- <li>
+       <!-- navbar -->
+    <div class="navbar bg-none px-6 sm:px-20">
+      <div class="navbar-start">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="logo" class="w-36" />
+        </a>
+      </div>
+      <div class="navbar-center nav-menu lg:bg-transparent bg-light -mt-36 no-scroll">
+        <ul id="dropdown-nav" class="menu menu-horizontal pt-10">
+          <li tabindex="0">
+            <a href="category.html" class="font-lato nav-item hidden lg:flex">
+              Shop
+              
+            </a>
+            <!-- <ul class="p-2">
+
+              <li><a class="font-lato hidden lg:flex" href="newProductlist.html">Bønner</a></li>
+              <li><a class="font-lato hidden lg:flex">Kapsler</a></li>
+            </ul> -->
+          </li>
+          <li><a href="subscription.html" class="font-lato nav-item hidden lg:flex">Kaffe abonnement</a></li>
+          <li><a class="font-lato nav-item hidden lg:flex">Guides</a></li>
+        </ul>
+
+        <ul class="visible lg:hidden">
+          <li>
+            <a
+              href="newProductlist.html"
+              class="font-lato nav-item hover:text-accent"
+              >Køb kaffe</a
+            >
+          </li>
+          <li>
+            <a href="subscription.html" class="font-lato nav-item hover:text-accent">Kaffe abonnement</a>
+          </li>
+          <li>
+            <a a href="#" class="font-lato nav-item hover:text-accent">Guides</a>
+          </li>
+          <!-- <li>
             <a a href="#" class="font-lato nav-item hover:text-accent"
               >MENU ITEM 4</a
             >
@@ -90,48 +73,48 @@
               >MENU ITEM 6</a
             >
           </li> -->
-          </ul>
+        </ul>
+      </div>
+
+      <div class="navbar-end">
+        <button class="btn btn-ghost btn-circle hidden lg:flex">
+          <a href="index.html">
+            <img src="images/search.svg" class="h-5" alt="search" />
+          </a>
+        </button>
+
+        <button class="btn btn-ghost btn-circle hidden lg:flex">
+          <a href="index.html">
+            <img src="images/basket.svg" class="h-5" alt="basket" />
+          </a>
+        </button>
+
+        <button class="btn btn-ghost btn-circle hidden lg:flex">
+          <a href="index.html">
+            <img src="images/profile.svg" class="h-5" alt="profile" />
+          </a>
+        </button>
+
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
 
-        <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle hidden lg:flex">
+        <div class="dropdown hidden lg:flex">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
             <a href="index.html">
-              <img src="images/search.svg" class="h-5" alt="search" />
+              <!-- <img src="images/burgermenu.svg" class="h-6" alt="burger" /> -->
+
+              <p class="hidden">hidden</p>
+              <!-- <div class="hamburgerdesktop">
+                <div class="bardesktop"></div>
+                <div class="bardesktop"></div>
+                <div class="bardesktop"></div> -->
+              <!-- </div> -->
             </a>
-          </button>
-
-          <button class="btn btn-ghost btn-circle hidden lg:flex">
-            <a href="index.html">
-              <img src="images/basket.svg" class="h-5" alt="basket" />
-            </a>
-          </button>
-
-          <button class="btn btn-ghost btn-circle hidden lg:flex">
-            <a href="index.html">
-              <img src="images/profile.svg" class="h-5" alt="profile" />
-            </a>
-          </button>
-
-          <div class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-
-          <div class="dropdown hidden lg:flex">
-            <label tabindex="0" class="btn btn-ghost btn-circle">
-              <a href="index.html">
-                <!-- <img src="images/burgermenu.svg" class="h-6" alt="burger" /> -->
-
-                <p class="hidden">hidden</p>
-                <div class="hamburgerdesktop">
-                  <div class="bardesktop"></div>
-                  <div class="bardesktop"></div>
-                  <div class="bardesktop"></div>
-                </div>
-              </a>
-            </label>
-            <!-- <ul
+          </label>
+          <!-- <ul
             tabindex="0"
             class="menu menu-compact dropdown-content bg-base-100 mt-3 mr-5 w-28 p-2 pr-10 shadow"
           >
@@ -140,11 +123,13 @@
             <li><a>Your profile</a></li>
             <li><a href="singleproduct.html">Menu item 4</a></li>
           </ul> -->
-          </div>
         </div>
       </div>
+    </div>
+  
 
-      <!-- end of navbar -->
+    <!-- end of navbar -->
+  
 
       <!-- test -->
 
