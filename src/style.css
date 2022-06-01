@@ -72,6 +72,7 @@ button {
 
   .nav-menu.active {
     left: 0;
+    z-index: 10;
   }
 
   .nav-item {
@@ -144,6 +145,11 @@ button {
 
 .rotate {
   transform: rotate(180);
+}
+
+.no-scroll {
+  overflow: hidden;
+  margin-top: -2rem;
 }
 
 html {
