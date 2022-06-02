@@ -57,3 +57,5 @@ function andetShow() {
 //   smoothTouch: 0.1,
 //   effects: true,
 // });
+
+//COOKIE BAR

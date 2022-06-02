@@ -11,6 +11,8 @@
 
     <script src="index.js" defer></script>
 
+    <script src="removeCookies.js" defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,6 +23,9 @@
   </head>
 
   <body>
+
+
+    
     <div id="smooth-wrapper">
       <div id="smooth-content">
     <figure class=" bg-gradient-to-b from-brown via-light to-transparent"> 
@@ -150,14 +155,28 @@
   <!-- end of navbar -->
 
   
+<!-- Cookies -->
+
+
+  <!-- <div class="absolute "> 
+    <div id="coockies" class="mt-96  alert">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info flex-shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <span>we use cookies for no reason.</span>
+      </div>
+      <div class="flex-none">
+        <button id="accept" class="btn btn-sm btn-ghost">Deny</button>
+        <button id="deny" class="btn btn-sm btn-primary">Accept</button>
+      </div>
+    </div>
+  </div> -->
+
   
 
     <!-- hero section -->
 
-    <section data-speed="2" class="overflow-hidden z-0 md:grid grid-cols-2 md:mt-8">
-      <figure class="sm:hidden absolute">
-        <img class="ml-14 mt-48" src="images/bean-spread.png" alt="Beans">
-      </figure>
+    <section data-speed="2" class=" overflow-hidden z-0 md:grid grid-cols-2 md:mt-8">
+  
       <figure class="invisible md:visible flex w-0 md:w-full"> 
         <img class="absolute self-center w-7/12 " src="images/mockup.webp" alt="Coffee bag">
       </figure>
@@ -171,7 +190,23 @@
         </div>
       </div>
 
+      <div class="fixed md:mt-96 ml-20 md:-mb-28"> 
+        <div id="coockies" class="bg-light flex justify-between border-2 border-primary rounded-none alert">
+          <div class="md:mr-36">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class=" flex-shrink-0 w-10 h-28"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span> <h4> VI BRUGER COOKIES</h4> 
+               <p>Vi bruger cookies for at forbedre brugeroplevelsen på vores site. </p> </span>
+          </div>
+          <div class="flex-none md:ml-96 m-5 ">
+            <button id="accept" class="bg-light btn-white">Deny</button>
+            <button id="deny" class=" btn-blue">Accept</button>
+          </div>
+        </div>
+      </div>
+
+
       <div class="m-10 flex justify-center md:justify-end md:m-0">
+
         <a href="#here">
           <svg
           id="here"
@@ -311,7 +346,7 @@
 
     </section>
 
-
+  </div>
    
     <!-- footer -->
 
