@@ -49,3 +49,11 @@ document.querySelector("#andetbtn").addEventListener("click", andetShow);
 function andetShow() {
   document.querySelector("#andetcontent").classList.toggle("hide");
 }
+
+// gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+// let smoother = scrollSmoother.create({
+//   smooth: 4,
+//   smoothTouch: 0.1,
+//   effects: true,
+// });
