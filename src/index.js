@@ -22,6 +22,7 @@ function mobileMenu() {
 document.querySelector("#sortbtn").addEventListener("click", sortShow);
 
 function sortShow() {
+  console.log("denne her er sortshow function");
   document.querySelector("#sortcontent").classList.toggle("hide");
 }
 
